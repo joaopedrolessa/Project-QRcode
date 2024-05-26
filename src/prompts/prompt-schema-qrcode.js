@@ -3,15 +3,15 @@ import chalk from "chalk";
 const promptSchemaQRCode = [
     {
         name: "link",
-        description: chalk.yellow("digiti um link para gerar o QR CODE")
+        description: chalk.yellow("Enter a link to generate the QR code")
     },
     {
         name:"type",
         description: chalk.yellow(
-            "Wscolha entre o tipo de QR code (1- normal ou (2- terminal"
+            "Choose between the type of QR code (1 - normal or (2 - terminal"
         ),
         pattern: /^[1-2]+$/,
-        message: chalk.red.bold("escolha apenas entyre 1 e 2"),
+        message: chalk.red.bold("Choose only between 1 and 2"),
         required: true,
     },
 ]
